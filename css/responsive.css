@@ -1,0 +1,101 @@
+
+@media screen and (max-width: 600px) {
+.container{
+    position: relative;
+}
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        margin-top: 30px;
+    }
+    nav {
+        height: 50px;
+        background-color: rgb(204, 221, 243);
+        border-bottom: 1px solid rgba(93, 157, 240, 0.904);
+        box-shadow: 5px 1px 5px 1px rgba(93, 157, 240, 0.76);
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    nav .menu{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .logo img{
+        margin-left: 15px;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .product{
+        width: 130px;
+        height: 200px;
+        border: 1px solid rgba(0, 0, 0, 0.466);
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 15px;
+        padding-bottom: 10px;
+        box-shadow: 7.5px 7.5px 7.5px rgba(128, 128, 128, 0.39);
+        transition:.2s all ease-in-out;}
+
+        .image img {
+            width: 100%;
+            height: 100px;
+        }
+.info{
+    gap: 10px;
+    padding: 10px;
+}        
+
+    p,h3,h5 {
+        font-size: 8px;
+        font-weight: 600;
+    }
+ .mybas{
+        width: 200px;
+        height: 480px;
+        background-color:  rgb(204, 221, 243);
+        border-right: 1px solid   rgb(68, 142, 240);
+        position: absolute;
+        top:50px;
+        left:-400px;
+        overflow-y: scroll;
+        display: block;
+        text-align: center;
+        transition: .4s all ease-in;
+        border-radius: 0 0 40px ;
+    
+    }  
+
+    .mybas.active{
+        position: absolute;
+        top: 50px;
+        left:0px;
+    } 
+    .disp .product{
+        width: 100px;
+        height: 150px;
+        margin-bottom: 15px;
+        margin-left: 50px;
+    }
+    
+    .disp .product img{
+        height: 75px;
+    }
+    .disp .product .info{
+        height: 50px;
+        font-size: 10px;
+        gap: 3px;
+    }
+}
