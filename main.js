@@ -19,7 +19,6 @@ function domRender(url) {
             <div class="image">
                 <img src="${element.thumbnail}" alt="">
                 <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
                     <i onclick="basketrender(${element.id})" class="fa-solid fa-cart-plus"></i>
                 </div>
 
